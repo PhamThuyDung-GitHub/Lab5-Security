@@ -24,10 +24,8 @@ text_hashes = calculate_hashes(text_input, hash_types)
 hex_input = bytes.fromhex("aabbccddeeff")
 hex_hashes = calculate_hashes(hex_input, hash_types)
 
-# Test with a file containing your name and student's ID
-file_path = "student_info.txt"
-with open(file_path, 'w') as file:
-    file.write("Pham Thuy Dung - 20521214")
+# Test with the "student.txt" file
+file_path = "student.txt"  
 file_hashes = calculate_hashes_from_file(file_path, hash_types)
 
 print("Text Hashes:")
